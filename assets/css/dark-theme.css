@@ -1,0 +1,692 @@
+body{
+    transition: background-color 2.0s;
+}
+
+.dark-theme{
+    background-color: #01000c; /* Cor de fundo para o modo escuro */
+    color: #ffffff;
+
+    .list-group-item-primary {
+        color: #ffdad0; /* Cor do texto para o modo claro */
+        background-color: #853f2d; /* Cor de fundo para o modo claro */
+      }
+      
+      .list-group-item-primary.list-group-item-action:hover,
+      .list-group-item-primary.list-group-item-action:focus {
+        color: #ffc6b7; /* Cor do texto para o modo claro ao passar o mouse */
+        background-color: #853f2d; /* Cor de fundo para o modo claro ao passar o mouse */
+      }
+      
+      .list-group-item-primary.list-group-item-action.active {
+        color: #853f2d; /* Cor do texto para o modo claro quando ativo */
+        background-color: #fff; /* Cor de fundo para o modo claro quando ativo */
+        border-color: #853f2d;
+      }
+      
+      /* Repita o mesmo padrão para as outras classes (.list-group-item-secondary, .list-group-item-success, etc.) */
+      
+      .list-group-item-light {
+        color: #fdfdfe; /* Cor do texto para o modo claro */
+        background-color: #1b1e21; /* Cor de fundo para o modo claro */
+      }
+      
+      .list-group-item-light.list-group-item-action:hover,
+      .list-group-item-light.list-group-item-action:focus {
+        color: #ececf6; /* Cor do texto para o modo claro ao passar o mouse */
+        background-color: #1b1e21; /* Cor de fundo para o modo claro ao passar o mouse */
+      }
+      
+      .list-group-item-light.list-group-item-action.active {
+        color: #1b1e21; /* Cor do texto para o modo claro quando ativo */
+        background-color: #818182; /* Cor de fundo para o modo claro quando ativo */
+        border-color: #1b1e21;
+      }
+      
+      .list-group-item-dark {
+        color: #c6c8ca; /* Cor do texto para o modo claro */
+        background-color: #1b1e21; /* Cor de fundo para o modo claro */
+      }
+      
+      .list-group-item-dark.list-group-item-action:hover,
+      .list-group-item-dark.list-group-item-action:focus {
+        color: #b9bbbe; /* Cor do texto para o modo claro ao passar o mouse */
+        background-color: #1b1e21; /* Cor de fundo para o modo claro ao passar o mouse */
+      }
+      
+      .list-group-item-dark.list-group-item-action.active {
+        color: #1b1e21; /* Cor do texto para o modo claro quando ativo */
+        background-color: #818182; /* Cor de fundo para o modo claro quando ativo */
+        border-color: #1b1e21;
+      }
+      
+      /* Adicione ou modifique conforme necessário para as outras classes */
+      .tooltip-inner {
+        color: #000; /* Cor do texto para o modo claro */
+        background-color: #fff; /* Cor de fundo para o modo claro */
+      }
+      
+      .tooltip.show {
+        opacity: 0.9;
+      }
+      
+      .tooltip .arrow::before {
+        border-top-color: #fff;
+      }
+      
+      .popover {
+        background-color: #000; /* Cor de fundo para o modo claro */
+        border: 1px solid rgba(255, 255, 255, 0.2); /* Cor da borda para o modo claro */
+      }
+      
+      .popover .arrow::before {
+        border-bottom-color: rgba(255, 255, 255, 0.25);
+      }
+      
+      .popover-header {
+        background-color: #333; /* Cor de fundo para o modo claro */
+        border-bottom: 1px solid #222; /* Cor da borda para o modo claro */
+      }
+      
+      .popover-header:empty {
+        display: none;
+      }
+      
+      .popover-body {
+        color: #fff; /* Cor do texto para o modo claro */
+      }
+    
+      .nav-item {
+        color: #fff;
+      }
+
+      /* Cores escuras para o modo escuro */
+:root {
+    --primary-dark: #01000c; /* Cor escura principal */
+    --secondary-dark: #c6c8ca; /* Cor secundária escura */
+    --background-dark: #01000c; /* Cor de fundo escura */
+    --text-dark: #fff; /* Cor do texto escura */
+    --border-dark: #01000c; /* Cor da borda escura */
+  }
+  
+  /* ... (outras regras de estilo) ... */
+  
+  .contact .contact-infos .item i {
+    color: var(--primary-dark);
+    border: 1px solid var(--border-dark);
+  }
+  
+  .contact .contact-infos .item div {
+    border-bottom: 1px solid var(--border-dark);
+  }
+  
+  .contact .contact-infos .item div h5 {
+    opacity: 0.9;
+  }
+  
+  .contact .contact-infos .item div p {
+    opacity: 0.7;
+  }
+  
+  /* ... (outras regras de estilo) ... */
+  
+  .navbar {
+    background-color: var(--background-dark);
+  }
+
+  .navbar.affix{
+    background-color: var(--background-dark);
+    box-shadow: 0 6px 15px var(--border-dark);
+  }
+  
+  .navbar .navbar-nav .nav-link {
+    color: var(--text-dark);
+}
+
+  .navbar .navbar-nav .nav-link.active{
+    color: #A6BFEA;
+  }
+
+  /* ... (outras regras de estilo) ... */
+  
+  .page-footer {
+    background: var(--background-dark);
+    color: var(--text-dark);
+  }
+  
+  /* ... (outras regras de estilo) ... */
+  
+  .header {
+    border-bottom: 1px solid var(--border-dark);
+  }
+  
+  .header-title {
+    color: var(--text-dark);
+  }
+
+  
+  
+  /* ... (outras regras de estilo) ... */
+  
+  .section {
+    background: var(--background-dark);
+    color: var(--text-dark);
+  }
+  
+  .section.bg-white {
+    background-color: var(--background-dark);
+  }
+  
+  .section.bg-gray {
+    background: var(--background-dark);
+  }
+  
+  :root {
+    --primary-dark: #242b2e; /* Cor escura principal */
+    --secondary-dark: #6c757d; /* Cor secundária escura */
+    --background-dark: #1e2226; /* Cor de fundo escura */
+    --text-dark: #dcdcdc; /* Cor do texto escura */
+    --border-dark: #343a40; /* Cor da borda escura */
+  }
+
+
+
+  
+  .btn.btn-primary {
+    color:var(--background-dark);
+  }
+  
+  .img-wrapper .overlay {
+    background: var(--background-dark);
+  }
+  
+  .header {
+    border-bottom: 1px solid var(--border-dark);
+  }
+  
+  .header-title {
+    color: var(--text-dark);
+  }
+  
+  .section {
+    background: var(--background-dark);
+    color: var(--text-dark);
+  }
+  
+  .section.bg-white {
+    background-color:var;
+  }
+  
+  .section.bg-gray {
+    background: var(--background-dark);
+  }
+  
+.contact .text-left{
+    background: var(--background-dark);
+}
+
+  .contact {
+    box-shadow: 2px 3px 10px rgb(0, 0, 0);
+    background: var(--background-dark);
+    color: var(--text-dark);
+  }
+  
+  .contact .form {
+    border-right: 1px solid var(--border-dark);
+  }
+  
+  @media (max-width: 991.98px) {
+    .contact {
+      box-shadow: none;
+    }
+    .contact .form {
+      border-right: none;
+    }
+  }
+  
+ .contact .contact-infos .item i{
+    border: var(--border-dark);
+    color: var(--text-dark);
+ }
+ 
+ :root {
+    --primary-light: #A6BFEA; /* Cor clara principal */
+    --secondary-light: #eee; /* Cor secundária clara */
+    --background-light: #fff; /* Cor de fundo clara */
+    --text-light: #333; /* Cor do texto clara */
+    --border-light: #ddd; /* Cor da borda clara */
+  
+    --primary-dark: #375a7f; /* Cor escura principal */
+    --secondary-dark: #ccc; /* Cor secundária escura */
+    --background-dark: #01000c; /* Cor de fundo escura */
+    --text-dark: #fff; /* Cor do texto escura */
+    --border-dark: #333; /* Cor da borda escura */
+  }
+  
+  .btn.btn-primary {
+    color: var(--text-light);
+    background-color: var(--primary-dark);
+  }
+  
+  .btn.rounded {
+    border-radius: 50px !important;
+  }
+  
+  .btn.w-sm {
+    min-width: 100px;
+  }
+  
+  .btn.w-md {
+    min-width: 130px;
+  }
+  
+  .btn.w-lg {
+    min-width: 160px;
+  }
+  
+  .img-wrapper {
+    position: relative;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+  
+  .img-wrapper img {
+    position: relative;
+    width: 100%;
+    z-index: 8;
+  }
+  
+  .img-wrapper .overlay {
+    background: rgba(55, 90, 127, 0.7);
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s;
+  }
+  
+  .img-wrapper .overlay .overlay-infos {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s;
+    transition-delay: .2s;
+    color: #fff;
+  }
+  
+  .img-wrapper .overlay .overlay-infos h5 {
+    margin-bottom: 15px;
+  }
+  
+  .img-wrapper .overlay .overlay-infos a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid #A6BFEA;
+    line-height: 35px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .img-wrapper .overlay .overlay-infos a:hover {
+    background: #01000c;
+    color: var(--primary-dark);
+  }
+  
+  .img-wrapper:hover .overlay, .img-wrapper:active .overlay {
+    bottom: 0;
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .img-wrapper:hover .overlay .overlay-infos, .img-wrapper:active .overlay .overlay-infos {
+    top: 50%;
+  }
+  
+  .card {
+    box-shadow: 2px 3px 10px rgba(51, 51, 51, 0.3);
+    background: var(--background-dark);
+    color: var(--text-dark);
+  }
+  
+  .card .post-details a {
+    opacity: .6;
+    color: var(--text-dark);
+  }
+  
+  .card .post-details a i {
+    padding-right: 5px;
+  }
+  
+  .custom-card {
+    border-radius: 0.25rem;
+    transition: all 0.3s;
+  }
+  
+  .custom-card .card-body {
+    padding: 55px 0;
+  }
+  
+  .custom-card .card-body i {
+    display: block;
+    font-size: 40px;
+    margin-bottom: 18px;
+    color: var(--primary-dark);
+  }
+  
+  .custom-card:hover, .custom-card:active {
+    background:#A6BFEA;
+    color: #fff;
+  }
+  
+  .custom-card:hover i, .custom-card:active i {
+    color: #fff;
+  }
+  
+  .testimonial-card {
+    background: var(--background-dark);
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.747);
+    border-radius: 0.25rem;
+    max-width: 700px;
+    margin: 10px auto;
+    padding: 20px 15px;
+  }
+  
+  .testimonial-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.911);
+    margin-bottom: 30px;
+  }
+ 
+  .header{
+    border-bottom:1px solid #A6BFEA;
+  }
+
+  .header .widget {
+    border: 1px solid #A6BFEA;
+    background: #01000c;
+    box-shadow: 0 0 30px rgba(1, 39, 77, 0.555)
+}
+
+  .text-white {
+    color: #fff !important;
+  }
+  
+  .text-primary {
+    color: var(--primary-light) !important;
+  }
+  
+  a.text-primary:hover, a.text-primary:focus {
+    color: var(--primary-dark) !important;
+  }
+  
+  .text-secondary {
+    color: var(--secondary-light) !important;
+  }
+  
+  a.text-secondary:hover, a.text-secondary:focus {
+    color: var(--secondary-dark) !important;
+  }
+  
+  .text-success {
+    color: #A3C14A !important;
+  }
+  
+  a.text-success:hover, a.text-success:focus {
+    color: #768e31 !important;
+  }
+  
+  .text-info {
+    color: #47D8E0 !important;
+  }
+  
+  a.text-info:hover, a.text-info:focus {
+    color: #20b3bb !important;
+  }
+  
+  .text-warning {
+    color: #FAD02C !important;
+  }
+  
+  a.text-warning:hover, a.text-warning:focus {
+    color: #d4aa05 !important;
+  }
+  
+  .text-danger {
+    color: #F85C70 !important;
+  }
+  
+  a.text-danger:hover, a.text-danger:focus {
+    color: #f51330 !important;
+  }
+  
+  .text-light {
+    color: var(--text-light) !important;
+  }
+  
+  a.text-light:hover, a.text-light:focus {
+    color: var(--background-dark) !important;
+  }
+  
+  .text-dark {
+    color: var(--text-dark) !important;
+  }
+  
+  a.text-dark:hover, a.text-dark:focus {
+    color: var(--background-light) !important;
+  }
+  
+  .text-body {
+    color: var(--text-dark) !important;
+  }
+  
+  .text-muted {
+    color: var(--secondary-light) !important;
+  }
+  
+  .text-black-50 {
+    color: rgba(0, 0, 0, 0.5) !important;
+  }
+  
+  .text-white-50 {
+    color: rgba(255, 255, 255, 0.5) !important;
+  }
+  
+  .text-hide {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+  }
+  
+  .text-decoration-none {
+    text-decoration: none !important;
+  }
+  
+  .text-break {
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+  }
+  
+  .text-reset {
+    color: inherit !important;
+  }
+  
+  .visible {
+    visibility: visible !important;
+  }
+  
+  .invisible {
+    visibility: hidden !important;
+  }
+
+  .stretched-link::after{
+    background-color: var(--background-dark);
+  }
+  .popover{
+    background-color: var(--background-dark);
+  }
+  .tooltip-inner{
+    background-color: var(--background-dark);
+  }
+
+  .text-white {
+    color: #fff !important;
+  }
+  
+  .text-primary {
+    color: var(--primary-light) !important;
+  }
+  
+  a.text-primary:hover, a.text-primary:focus {
+    color: var(--primary-dark) !important;
+  }
+  
+  /* Adicione mais estilos para outros textos e elementos se necessário */
+  
+  /* Estilos para o tema escuro */
+  .dark-mode .text-white {
+    color: #fff !important;
+  }
+  
+  .dark-mode .text-primary {
+    color: var(--primary-dark) !important;
+  }
+  
+  .dark-mode a.text-primary:hover, .dark-mode a.text-primary:focus {
+    color: var(--primary-light) !important;
+  }
+
+  :root {
+    --primary-light: #853f2d; /* Cor clara principal */
+    --secondary-light: #383d41; /* Cor secundária clara */
+    --success-light: #556426; /* Cor de sucesso clara */
+    --info-light: #257074; /* Cor de informação clara */
+    --warning-light: #826c17; /* Cor de aviso clara */
+    --danger-light: #81303a; /* Cor de perigo clara */
+    --light-light: #818182; /* Cor de luz clara */
+    --dark-light: #1b1e21; /* Cor escura clara */
+  
+    --primary-dark: #ffc6b7; /* Cor escura principal */
+    --secondary-dark: #c8cbcf; /* Cor secundária escura */
+    --success-dark: #dbe8b9; /* Cor de sucesso escura */
+    --info-dark: #b5eff2; /* Cor de informação escura */
+    --warning-dark: #feecab; /* Cor de aviso escura */
+    --danger-dark: #fcb9c2; /* Cor de perigo escura */
+    --light-dark: #ececf6; /* Cor de luz escura */
+    --dark-dark: #b9bbbe; /* Cor escura escura */
+  }
+  
+  /* Estilos para o tema claro */
+  .list-group-item-primary {
+    color: var(--primary-light);
+    background-color: var(--primary-light);
+  }
+  
+  .list-group-item-secondary {
+    color: var(--secondary-light);
+    background-color: var(--secondary-light);
+  }
+  
+  .list-group-item-success {
+    color: var(--success-light);
+    background-color: var(--success-light);
+  }
+  
+  .list-group-item-info {
+    color: var(--info-light);
+    background-color: var(--info-light);
+  }
+  
+  .list-group-item-warning {
+    color: var(--warning-light);
+    background-color: var(--warning-light);
+  }
+  
+  .list-group-item-danger {
+    color: var(--danger-light);
+    background-color: var(--danger-light);
+  }
+  
+  .list-group-item-light {
+    color: var(--light-light);
+    background-color: var(--light-light);
+  }
+  
+  .list-group-item-dark {
+    color: var(--dark-light);
+    background-color: var(--dark-light);
+  }
+  
+  /* Estilos para o tema escuro */
+  .dark-mode .list-group-item-primary {
+    color: var(--primary-dark);
+    background-color: var(--primary-dark);
+  }
+  
+  .dark-mode .list-group-item-secondary {
+    color: var(--secondary-dark);
+    background-color: var(--secondary-dark);
+  }
+  
+  .dark-mode .list-group-item-success {
+    color: var(--success-dark);
+    background-color: var(--success-dark);
+  }
+  
+  .dark-mode .list-group-item-info {
+    color: var(--info-dark);
+    background-color: var(--info-dark);
+  }
+  
+  .dark-mode .list-group-item-warning {
+    color: var(--warning-dark);
+    background-color: var(--warning-dark);
+  }
+  
+  .dark-mode .list-group-item-danger {
+    color: var(--danger-dark);
+    background-color: var(--danger-dark);
+  }
+  
+  .dark-mode .list-group-item-light {
+    color: var(--light-dark);
+    background-color: var(--light-dark);
+  }
+  
+  .dark-mode .list-group-item-dark {
+    color: var(--dark-dark);
+    background-color: var(--dark-dark);
+  }
+
+  .header .container .img-holder img {
+    width: 100%;
+    max-width: 520px;
+    -webkit-filter: drop-shadow(0 -4px 20px rgba(206, 212, 218, 0.4));
+    filter: drop-shadow(0 -4px 20px rgba(206, 212, 218, 0.4));
+    margin-left: auto;
+    margin-right: -2rem;
+}
+
+.contact .form {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    border-right: 1px solid #dee2e6;
+    padding: 35px 30px 35px 0;
+}
+
+
+
+}

@@ -45,11 +45,18 @@
 }
 
 
+
+#icon{
+  width: 30px;
+  cursor: pointer;
+  margin-left: 50px;
+}
+
 .btn{
   
   background: white;
   border-radius: 10%;
-  border-color: 4px #47D8E0;
+ border-color: 4px #47D8E0;
   color: #121416;
 }
 
@@ -215,7 +222,7 @@ a {
 }
 
 a:hover {
-  color: #ff3d0b;
+  color: #47D8E0;
   text-decoration: underline;
 }
 
@@ -11570,8 +11577,8 @@ pre {
 .header .container .img-holder img {
   width: 100%;
   max-width: 520px;
-  -webkit-filter: drop-shadow(0 -4px 20px rgba(206, 212, 218, 0.4));
-          filter: drop-shadow(0 -4px 20px rgba(206, 212, 218, 0.4));
+ 
+         
   margin-left: auto;
   margin-right: -2rem;
 }
@@ -11694,3 +11701,29 @@ pre {
 .section.bg-gray {
   background: white;
 }
+
+
+/* Barra de rolagem */
+body::-webkit-scrollbar {
+  width: 17px;
+
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #A6BFEA;
+  border-radius: 6px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #202326;
+}
+
+/* Personalizando a barra de rolagem no modo escuro */
+body.dark-mode::-webkit-scrollbar-thumb {
+  background-color: #01000c;
+}
+
+body.dark-mode::-webkit-scrollbar-track {
+  background-color: #A6BFEA;
+}
+
